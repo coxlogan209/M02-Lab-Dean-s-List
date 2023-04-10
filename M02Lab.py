@@ -1,7 +1,7 @@
 #Logan Cox M02Lab.py This app requires a student's first name, last name, and gpa. It will then determine if they are on the Dean's list or honor roll.
-# last_name is the student's last name
-# first_name is the student's first name
-# gpa is the student's gpa
+# lastName is the student's last name
+# firstName is the student's first name
+# GPA is the student's gpa
 
 lastName = input("Enter students last name or 'ZZZ' to quit: ")
 while lastName != 'ZZZ':
