@@ -3,13 +3,14 @@
 # first_name is the student's first name
 # gpa is the student's gpa
 
-while True:
-    last_name = input("Enter student's last name (or ZZZ to quit): ")
-    if last_name == 'ZZZ':
-        break
-    first_name = input("Enter student's first name: ")
-    gpa = float(input("Enter student's GPA: "))
-    if gpa >= 3.5:
-        print(f"{first_name} {last_name} made the Dean's List!")
-    elif gpa >= 3.25:
-        print(f"{first_name} {last_name} made the Honor Roll!")
+lastName = input("Enter students last name or 'ZZZ' to quit: ")
+while lastName != 'ZZZ':
+    firstName = input("Enter student's first name: ")
+    GPA = float(input("Enter student's GPA: "))
+    if GPA < 3.25:
+        print("This student has not achieved Dean's List OR Honor Roll.")
+    elif GPA < 3.5:
+        print(firstName, lastName, "has achieved Honor Roll")
+    else:
+        print(firstName, lastName, "has achieved Dean's List")
+    lastName = input("Enter students last name or 'ZZZ' to quit: ")
